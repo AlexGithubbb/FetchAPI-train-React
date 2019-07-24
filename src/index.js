@@ -7,9 +7,11 @@ import axios from 'axios';
 
 
 // set a default global configuration
+
 axios.defaults.baseURL = 'https://jsonplaceholder.typicode.com';
 axios.defaults.headers.common['Authorization'] = 'AUTH TOKEN';
 axios.defaults.headers.post['Content-Type'] = 'application/type';
+
 // very common use case is for the request interceptor to add some common headers. for example, an authorization header.
 
 // the code below is to register a new interceptor
