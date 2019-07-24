@@ -4,14 +4,17 @@
   "private": true,
   "dependencies": {
     "axios": "^0.19.0",
+    "gh-pages": "^2.0.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.13"
   },
+  "homepage": "https://AlexGithubbb.github.io/FetchAPI-train-React",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && gh-pages -d build"
   }
 }
