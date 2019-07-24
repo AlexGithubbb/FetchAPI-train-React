@@ -14,7 +14,7 @@ class Blog extends Component {
     }
     // componentDidMount is best for getting the API data
     componentDidMount(){
-        axios.get('https://jsonplaceholder.typicode.com/postswww')
+        axios.get('/posts')
         .then(response => {
             const posts = response.data.slice(0,4);
             const updatePosts = posts.map(post =>{
@@ -28,7 +28,7 @@ class Blog extends Component {
         })
         .catch(err => {
             this.setState({ error: true },
-                console.log(err)
+                // console.log(err)
         )}
         )
     }
